@@ -25,8 +25,6 @@ git clone으로 모든 데이터를 다운받는다, 단, 'management' 폴더 �
 
 (classification_model의 정상적인 데이터 크기는 약 500MB로, git clone으로 다운받았을 시에는 이 크기보다 한참 작은 값이 로딩되어 있다.)
 
-### Windows
-
 anaconda3 설치 (https://www.anaconda.com/distribution/)
 
 설치 후 anaconda prompt를 열고
@@ -56,3 +54,5 @@ python ./manage.py runserver 0.0.0.0:8080
 명령어를 순차적으로 실행해 로컬서버를 구동한다.
 
 (python 기본 path가 2.7로 설정되어 있다면 python3으로 구동하면 된다.)
+
+cf. 우분투에서 개발작업을 했고, 윈도우 구동을 생각하지 않았던 관계로 os.path.join을 쓰지 않고 하드코딩했었다. 그래서 윈도우에서는 이미지 분류 함수가 작동하지 
